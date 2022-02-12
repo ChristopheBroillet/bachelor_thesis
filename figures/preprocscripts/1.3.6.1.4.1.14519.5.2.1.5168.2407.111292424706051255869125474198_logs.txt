@@ -1,0 +1,5 @@
+Row 220 is missing
+Row 223 is missing
+Rows 217 - 218 - 219 have min absurd value. Before: 285 - 307 - 284. After: 285 - 284 - 284
+Rows 218 - 219 - 220 have max absurd value. Before: 308 - 285 - 296. After: 308 - 302 - 296
+Rows 221 - 222 - 223 have min absurd value. Before: 284 - 307 - 295. After: 284 - 289 - 295

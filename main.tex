@@ -23,7 +23,7 @@
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{mathpazo} % Use the Palatino font by default
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=bibtex,style=numeric,maxcitenames=2,natbib=true,sorting=none]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 \usepackage{booktabs}       % professional-quality tables
 \usepackage{array}          % custom sizes for table columns
@@ -44,8 +44,12 @@
 
 
 %% User packages
-% \usepackage{add here}
+\usepackage{listings}
+\usepackage{xcolor}
 % Include your package settings in `structure/settings.tex`
+
+%% User commands
+\newcommand{\cb}[1]{\textcolor{red}{[#1]}}
 
 
 % Load package settings
@@ -95,6 +99,7 @@
 %	LIST OF CONTENTS/FIGURES/TABLES + TRANSITION PAGES
 %----------------------------------------------------------------------------------------
 \hypersetup{linkcolor=black}
+\setcounter{tocdepth}{2}
 \tableofcontents % Prints the main table of contents
 \listoffigures % Prints the list of figures
 \mainmatter % Begin numeric (1,2,3...) page numbering
@@ -107,10 +112,12 @@
 
 % Include here the chapters of the thesis
 % Comment/uncomment the lines to find bugs and compile faster during writing
-\include{structure/template_intro} % comment this out
-% \include{chapters/introduction}
-% \include{chapters/ ...}
-% \include{chapters/conclusions}
+% \input{structure/template_intro} % comment this out
+\input{chapters/introduction}
+\input{chapters/mlbasics}
+\input{chapters/datasets}
+\input{chapters/preprocscripts}
+\input{chapters/conclusion}
 
 
 %----------------------------------------------------------------------------------------

@@ -1,0 +1,26 @@
+<unblindedReadNodule>
+    <noduleID>0</noduleID>
+    <characteristics>
+	    <subtlety>5</subtlety>
+	    <internalStructure>1</internalStructure>
+	    <calcification>6</calcification>
+	    <sphericity>5</sphericity>
+	    <margin>4</margin>
+	    <lobulation>1</lobulation>
+	    <spiculation>5</spiculation>
+	    <texture>4</texture>
+	    <malignancy>4</malignancy>
+    </characteristics>
+    <roi>
+	    <imageZposition>-105.0</imageZposition>
+	    <imageSOP_UID>1.3.6.1.4.1.14519.5.2.1.</imageSOP_UID>
+	    <inclusion>TRUE</inclusion>
+	    <edgeMap>
+	    <xCoord>311</xCoord>
+	    <yCoord>361</yCoord>
+	    </edgeMap>
+	    <edgeMap>
+	    <xCoord>310</xCoord>
+	    <yCoord>362</yCoord>
+	    </edgeMap>
+	    <edgeMap>

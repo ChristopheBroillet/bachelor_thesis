@@ -1,0 +1,16 @@
+% !TEX root = ../main.tex
+
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+This work presented the new contributions on a computer aided diagnosis (CAD) system named Hydra, that can detect cancerous tumors. The Hydra framework was born under a collaboration between the H-FR and the eXascale Infolab of the University of Fribourg. This work contributes three scripts that preprocess three new datasets: they modify and transform the data so that it can be used with the Hydra model. The number of datasets for the Hydra framework has been doubled. With these new datasets, this work helps avoiding the problem of scarcity of publicly available medical data.
+
+Another contribution of this work is also the implementation of a new task for the CAD system, named the segmentation. This was possible by developing a brand new module. It creates a segmentation mask given a medical image and a list of contour points that delimit the tumor. The new module has been used on three new datasets: two of them are preprocessed for the segmentation task while the last one is preprocessed for both localization and segmentation tasks.
+
+
+\section{Future Work}
+As the new module that creates the segmentation masks has been developed in this work and is ready to be used, the next goal is to utilize it in the Hydra framework. That means, a new Hydra model has to be constructed on purpose for segmentation task. A model that is used nowadays for segmentation is the U-Net architecture~\cite{navab_u-net_2015}. Hydra can then use this U-Net model instead of the current VGG-16 model.
+
+Another way to improve Hydra's performance is to augment the data already preprocessed in this work: by flipping or rotating for example, the medical images are not the same to the eyes of the machine, and thus will extend the data available for the Hydra framework.
+
+In the next years with improvement and advent of new machine learning techniques, the Hydra framework or other CAD systems will hopefully be used to really help radiologists to detect as early as possible the first stages of cancer, resulting in saving human lives.
