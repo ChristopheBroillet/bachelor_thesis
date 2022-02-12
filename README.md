@@ -1,4 +1,4 @@
-# Pre-Processing Segmentation Datasets For The Hydra Framework
+# Pre-Processing Segmentation Datasets for the Hydra Framework
 
 Author: Christophe Broillet
 
